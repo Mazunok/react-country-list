@@ -4,14 +4,14 @@ export interface ICountry {
   name: string;
   capital: string;
   population: number;
-  flag: string;
+  flags: string;
   area: number;
   region: string;
 }
 
 export interface ICountryApi {
   name: { common: string };
-  capital: string;
+  capital: string[];
   population: number;
   flags: { svg: string };
   area: number;
