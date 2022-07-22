@@ -9,11 +9,15 @@ export interface ICountry {
   region: string;
 }
 
+export interface INativeName {
+  [key: string]: { common: string; official: string } | undefined;
+}
+
 export interface ICountryApi {
-  name: { common: string };
+  name: { common: string; official: string; nativeName: INativeName };
   capital: string[];
   population: number;
-  flags: { svg: string };
+  flags: { [format: string]: string };
   area: number;
   region: string;
 }
