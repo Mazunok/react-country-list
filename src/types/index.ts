@@ -22,12 +22,6 @@ export interface ICountryApi {
   region: string;
 }
 
-export interface IBadge {
-  label: BadgeLabel;
-  value: number;
-  color: Color;
-}
-
 export enum Color {
   Primary = "primary",
   Secondary = "secondary",
